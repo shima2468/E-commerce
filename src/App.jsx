@@ -73,7 +73,8 @@ function App() {
          {path:"/verfiy",element:<Verify/>},
          {path:"/Reset",element:<ResetPassword/>},
          {path:"home",element:<ProtectedRoutes><IndexHome/></ProtectedRoutes>},
-         {path:"/",element:<ProtectedAuth><Login/></ProtectedAuth>}
+         {path:"/",element:<ProtectedAuth><Login/></ProtectedAuth>},
+         {path:"FinalProject/",element:<ProtectedAuth><Login/></ProtectedAuth>}
     ]
   }])
  

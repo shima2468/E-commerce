@@ -59,8 +59,8 @@ export default function Cart() {
   return (
     <>
       
-
-      <div className="mx-28 mt-11 relative overflow-x-auto shadow-md sm:rounded-lg mb-44">
+      <div className="mx-28 my-11">
+      <div className="relative  overflow-x-auto shadow-md sm:rounded-lg mb-44">
         <div className="text-right">
           <button
             onClick={() => clearCartItems()}
@@ -249,6 +249,7 @@ export default function Cart() {
             </tr>
           </tbody>
         </table>
+      </div>
       </div>
     </>
   );

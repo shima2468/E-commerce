@@ -3,7 +3,7 @@ import styles from "./WishList.module.css"
 import { WishContext } from '../../../Context/wishListContext'
 import Loader from '../Loader/Loader';
 import { CartContext } from '../../../Context/CartContext';
-
+// import { Helmet } from 'react-helmet';
 export default function WishList() {
 
     let{getWishList,wishList,deleteWishlist}= useContext(WishContext);
@@ -44,7 +44,7 @@ export default function WishList() {
   return (
     <> 
      
-      <div className="mx-28 my-24">
+     <div className="mx-28 my-11">
 
                     
                     <div className=" p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
