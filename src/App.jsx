@@ -13,7 +13,7 @@ import Brands from './Components/Brands/Brands'
 import Product from './Components/Product/Product'
 import NotFound from './Components/NotFound/NotFound'
 import ProtectedRoutes from './Components/ProtectedRoutes/ProtectedRoutes'
-import IndexHome from './Components/indexHome/indexHome'
+
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import ProtectedAuth from './Components/ProtectedAuth/ProtectedAuth'
@@ -26,6 +26,7 @@ import WishList from './Components/WishList/WishList'
 import Verify from './Components/Verify/Verify'
 import ResetPassword from './Components/ResetPassword/ResetPassword'
 import 'flowbite-react'
+import IndexHome from './Components/IndexHome/IndexHome'
 // import flowbite from '../node_modules/f'
 
 function App() {
@@ -62,7 +63,7 @@ function App() {
          {path:"cart",element:<ProtectedRoutes><Cart/></ProtectedRoutes>},
          {path:"brands",element:<ProtectedRoutes><Brands/></ProtectedRoutes>},
          {path:"product",element:<ProtectedRoutes><Product/></ProtectedRoutes>},
-         {path:"/*",element:<ProtectedAuth><Login/></ProtectedAuth>},
+         {path:"*",element:<NotFound/>},
          {path:"/productdetails/:id/:category",element:<ProtectedRoutes><ProductDetails/></ProtectedRoutes>},
          {path:"allorders",element:<ProtectedRoutes><AllOrders/></ProtectedRoutes>},
          {path:"categories",element:<ProtectedRoutes><Categories/></ProtectedRoutes>},
