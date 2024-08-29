@@ -60,7 +60,7 @@ export default function Cart() {
     <>
       
 
-      <div className="mx-28 relative container mx-auto overflow-x-auto shadow-md sm:rounded-lg mb-44">
+      <div className="mx-28 mt-11 relative overflow-x-auto shadow-md sm:rounded-lg mb-44">
         <div className="text-right">
           <button
             onClick={() => clearCartItems()}
