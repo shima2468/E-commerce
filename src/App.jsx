@@ -62,7 +62,7 @@ function App() {
          {path:"cart",element:<ProtectedRoutes><Cart/></ProtectedRoutes>},
          {path:"brands",element:<ProtectedRoutes><Brands/></ProtectedRoutes>},
          {path:"product",element:<ProtectedRoutes><Product/></ProtectedRoutes>},
-         {path:"*",element:<NotFound/>},
+         {path:"/*",element:<ProtectedAuth><Login/></ProtectedAuth>},
          {path:"/productdetails/:id/:category",element:<ProtectedRoutes><ProductDetails/></ProtectedRoutes>},
          {path:"allorders",element:<ProtectedRoutes><AllOrders/></ProtectedRoutes>},
          {path:"categories",element:<ProtectedRoutes><Categories/></ProtectedRoutes>},
