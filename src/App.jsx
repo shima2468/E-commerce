@@ -56,7 +56,7 @@ function App() {
 
       // ProtectedAuth................................................
       // انو كان بنفع لما اكون عامل لوق ان وجاهز اروح بالباث فوق واكتب لوق ان ولا ريجيستر برجعني لا انا بديش هيك بدي يحفظلي الدنيا
-      {index:true,element:<ProtectedRoutes><IndexHome/></ProtectedRoutes>},
+      {index:true,element:<ProtectedAuth><Login/></ProtectedAuth>},
          {path:"login",element: <ProtectedAuth> <Login/></ProtectedAuth>},
          {path:"register",element:<ProtectedAuth> <Register/></ProtectedAuth> },
          {path:"cart",element:<ProtectedRoutes><Cart/></ProtectedRoutes>},
@@ -71,7 +71,8 @@ function App() {
          {path:"/forgetpassword",element:<ForgetPassword/>},
          {path:"/verfiy",element:<Verify/>},
          {path:"/Reset",element:<ResetPassword/>},
-         {path:"home",element:<ProtectedRoutes><IndexHome/></ProtectedRoutes>}
+         {path:"home",element:<ProtectedRoutes><IndexHome/></ProtectedRoutes>},
+         {path:"/",element:<ProtectedAuth><Login/></ProtectedAuth>}
     ]
   }])
  
