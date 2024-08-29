@@ -3,7 +3,7 @@ import styles from "./Verify.module.css"
 import { useFormik } from 'formik';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-import { Helmet } from 'react-helmet';
+
 export default function Verify() {
   const [isLoadsing, setIsLoading] = useState(false);
   let navgate=useNavigate()
@@ -39,10 +39,7 @@ export default function Verify() {
 
   return (
      <>
-     <Helmet>
-                                <meta charSet="utf-8" />
-                                <title>Verfiy code</title>
-    </Helmet>
+    
      <div className="w-[1200px] mx-auto my-32">
         <form onSubmit={formik.handleSubmit}>
           <h2 className="text-2xl">reset your account password </h2>

@@ -5,7 +5,7 @@ import { useFormik } from "formik";
 import * as Yup from 'yup';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-import { Helmet } from 'react-helmet';
+
 
 
 export default function Register() {
@@ -149,10 +149,7 @@ async function registerForm(values){
 
   return (
    <>
-       <Helmet>
-                                <meta charSet="utf-8" />
-                                <title>Register</title>
-      </Helmet>
+      
       <div className="ms-32 me-32 mt-24">
         <h1 className="text-main text-2xl">Register Now:</h1>
           {userErr ? (

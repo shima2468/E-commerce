@@ -4,7 +4,6 @@ import axios from 'axios';
 import Loader from '../Loader/Loader';
 import { useDispatch, useSelector } from 'react-redux';
 import { decreament, getBrands, increament, increamentByValue } from '../../Redux/ProductSlice';
-import { Helmet } from 'react-helmet';
 export default function Brands() {
     const [isLoading, setIsLoading] = useState(true)
     // (8) dispatch action 
@@ -38,10 +37,7 @@ async function getData() {
    return (
     
         <>
-             <Helmet>
-                            <meta charSet="utf-8" />
-                            <title>Brand</title>
-           </Helmet>
+          
 
 
              <h2 className="text-main text-center mx-auto font-bold text-3xl mt-32">All Brands:</h2>

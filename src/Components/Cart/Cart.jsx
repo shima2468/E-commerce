@@ -2,7 +2,6 @@ import React, { useContext, useEffect, useState } from "react";
 import styles from "./Cart.module.css";
 import { CartContext } from "../../../Context/CartContext";
 import { Link } from "react-router-dom";
-import { Helmet } from 'react-helmet';
 export default function Cart() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -59,10 +58,7 @@ export default function Cart() {
 
   return (
     <>
-      <Helmet>
-                            <meta charSet="utf-8" />
-                            <title>Cart</title>
-      </Helmet>
+      
 
       <div className="relative container mx-auto overflow-x-auto shadow-md sm:rounded-lg mb-44">
         <div className="text-right">

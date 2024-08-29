@@ -4,7 +4,7 @@ import { useFormik } from "formik";
 import axios from "axios";
 import toast from "react-hot-toast";
 import { useNavigate } from 'react-router-dom';
-import { Helmet } from "react-helmet";
+
 export default function ForgetPassword() {
   const [isLoadsing, setIsLoading] = useState(false)
   let navgate=useNavigate()
@@ -56,10 +56,7 @@ export default function ForgetPassword() {
 
   return (
     <>
-      <Helmet>
-                                <meta charSet="utf-8" />
-                                <title>Forget Password</title>
-      </Helmet>
+     
       <div className="w-[1200px] mx-auto my-32">
         <form onSubmit={formik.handleSubmit}>
           <h2 className="text-2xl">please enter your Email:</h2>

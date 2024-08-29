@@ -6,7 +6,7 @@ import { useQuery } from '@tanstack/react-query';
 import Slider from "react-slick";
 import Loader from '../Loader/Loader';
 import { CartContext } from '../../../Context/CartContext';
-import { Helmet } from 'react-helmet';
+
 export default function ProductDetails() {
   // hot toast
   // بدي اخده من الكارت كونتيكس 
@@ -173,10 +173,7 @@ export default function ProductDetails() {
                                                                     {productDetails.ratingsQuantity}  
                                                               </div>  
                             </div>
-                            <Helmet>
-                                                    <meta charSet="utf-8" />
-                                                    <title>{productDetails.title}</title>
-                            </Helmet>
+                           
                             <div className='text-center mt-16'>
                                                <button onClick={()=>addToCart(productDetails.id)} className='btn bg-main w-full text-white px-3 py-2 rounded-md'>Add To cart</button>
                             </div>

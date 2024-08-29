@@ -3,7 +3,7 @@ import styles from "./WishList.module.css"
 import { WishContext } from '../../../Context/wishListContext'
 import Loader from '../Loader/Loader';
 import { CartContext } from '../../../Context/CartContext';
-import { Helmet } from 'react-helmet';
+
 export default function WishList() {
 
     let{getWishList,wishList,deleteWishlist}= useContext(WishContext);
@@ -43,10 +43,7 @@ export default function WishList() {
     })
   return (
     <> 
-      <Helmet>
-                                <meta charSet="utf-8" />
-                                <title>Wish list</title>
-      </Helmet>
+     
       <div className="container mx-auto my-24">
 
                     

@@ -7,7 +7,7 @@ import { NavLink, useNavigate ,Link } from 'react-router-dom'
 import { useQuery } from '@tanstack/react-query'
 import { CartContext } from '../../../Context/CartContext'
 import { WishContext } from '../../../Context/wishListContext'
-import { Helmet } from 'react-helmet'
+
 
 
 
@@ -225,10 +225,7 @@ return (
                                                                     {product.ratingsQuantity}  
                                                               </div>  
                                                     </div>
-                                                    <Helmet>
-                                                              <meta charSet="utf-8" />
-                                                              <title>{product.title}</title>
-                                                   </Helmet>
+                                                    
                                                    
 
                                              </Link>

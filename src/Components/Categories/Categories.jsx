@@ -7,7 +7,7 @@ import { Link, useParams } from 'react-router-dom';
 import Loader from '../Loader/Loader';
 import { useDispatch, useSelector } from 'react-redux';
 import { getCategories } from '../../Redux/ProductSlice';
-import { Helmet } from 'react-helmet';
+
 
 export default function Categories() {
 
@@ -74,10 +74,7 @@ async function getData() {
   
           
           <>
-          <Helmet>
-                            <meta charSet="utf-8" />
-                            <title>Cartegories</title>
-        </Helmet>
+        
             {isLoading? <Loader/>:
             <div className='mx-28 mt-24 mb-32'>
                            
@@ -113,10 +110,7 @@ async function getData() {
                                                                   <a href="#" class="hover:shadow-sm hover:shadow-green-400 text-center w-[400px] h-[70px] flex items-center justify-center rounded-lg border border-gray-200 bg-white px-4 py-2 hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
                                                                             <span class="text-center text-2xl font-medium text-gray-900 dark:text-white">{SubCat.name}</span>
                                                                   </a>
-                                                                  <Helmet>
-                                                                                <meta charSet="utf-8" />
-                                                                                <title>{nameCat}</title>
-                                                                       </Helmet>
+                                                                  
                                                           </div>
                                                           
 
